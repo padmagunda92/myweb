@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>in.javahome</groupId>
     <artifactId>myweb</artifactId>
@@ -13,15 +13,15 @@
         <docker.image.prefix>kammana</docker.image.prefix>
         <sonar.host.url>http://43.205.98.240:9000/</sonar.host.url>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source> <!-- Updated to Java 8 -->
+        <maven.compiler.target>1.8</maven.compiler.target> <!-- Updated to Java 8 -->
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.6.3</version>
+            <version>4.13.2</version> <!-- Updated to a stable version -->
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -39,9 +39,9 @@
 
     <pluginRepositories>
         <pluginRepository>
-            <id>maven1</id>
-            <name>Maven.org</name>
-            <url>http://repo1.maven.org/maven2</url>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url> <!-- Changed to HTTPS -->
         </pluginRepository>
     </pluginRepositories>
 
@@ -50,7 +50,16 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.6.3</version> <!-- Updated version -->
+                <version>3.4.0</version> <!-- Updated to the latest stable version -->
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version> <!-- Added for source/target compatibility -->
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
