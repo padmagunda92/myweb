@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0.4143</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
     <groupId>in.javahome</groupId>
     <artifactId>myweb</artifactId>
     <packaging>war</packaging>
@@ -55,7 +55,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version> <!-- Added for source/target compatibility -->
+                <version>3.9.0.2155</version> <!-- Added for source/target compatibility -->
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
