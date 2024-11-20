@@ -32,7 +32,7 @@
             <url>http://13.232.145.253:8081/repository/snapshot/</url>
         </snapshotRepository>
         <repository>
-            <id>nexusRepo</id>
+            <id>deploymentRepo</id>
             <url>http://13.232.145.253:8081/repository/relases/</url>
         </repository>
     </distributionManagement>
