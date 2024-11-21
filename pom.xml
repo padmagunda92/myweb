@@ -31,11 +31,11 @@
     <distributionManagement>
         <snapshotRepository>
             <id>deploymentRepo</id>
-            <url>http://13.232.145.253:8081/repository/snapshot/</url>
+            <url>http://13.233.207.54:8081/repository/sample-snapshot/</url>
         </snapshotRepository>
         <repository>
             <id>deploymentRepo</id>
-            <url>http://13.232.145.253:8081/repository/releases/</url>
+            <url>http://13.233.207.54:8081/repository/sample-releases/</url>
         </repository>
     </distributionManagement>
 
