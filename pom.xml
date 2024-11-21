@@ -30,7 +30,7 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>deploymentRepo</id>
+            <id>deploymentrepo</id>
             <url>http://13.233.207.54:8081/repository/sample-snapshot/</url>
         </snapshotRepository>
         <repository>
