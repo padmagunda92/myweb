@@ -27,17 +27,18 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+         
+<distributionManagement>
+    <snapshotRepository>
+        <id>deploymentRepo</id>
+        <url>http://13.127.3.44:8081/repository/snapshot/</url>
+    </snapshotRepository>
+    <repository>
+        <id>deploymentRepo</id>
+        <url>http://13.127.3.44:8081/repository/release/</url>
+    </repository>
+</distributionManagement>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>deploymentrepo</id>
-            <url>http://13.127.3.44:8081/repository/snapshot/</url>
-        </snapshotRepository>
-        <repository>
-            <id>deploymentRepo</id>
-            <url>http://13.127.3.44:8081/repository/release/</url>
-        </repository>
-    </distributionManagement>
 
     <pluginRepositories>
         <pluginRepository>
