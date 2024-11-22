@@ -28,17 +28,16 @@
         </dependency>
     </dependencies>
          
-<distributionManagement>
-    <snapshotRepository>
-        <id>deploymentRepo</id>
-        <url>http://13.127.3.44:8081/repository/snapshot/</url>
-    </snapshotRepository>
-    <repository>
-        <id>deploymentRepo</id>
-        <url>http://13.127.3.44:8081/repository/release/</url>
-    </repository>
-</distributionManagement>
-
+    <distributionManagement>
+        <snapshotRepository>
+            <id>deploymentRepo</id>
+            <url>http://13.127.3.44:8081/repository/snapshot/</url>
+        </snapshotRepository>
+        <repository>
+            <id>deploymentRepo</id>
+            <url>http://13.127.3.44:8081/repository/release/</url>
+        </repository>
+    </distributionManagement>
 
     <pluginRepositories>
         <pluginRepository>
@@ -54,13 +53,13 @@
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
-                <version>4.0.0.2929</version> <!-- Updated version -->
+                <version>4.0.0.2929</version>
             </plugin>
-            <!-- Maven WAR Plugin (Updated version) -->
+            <!-- Maven WAR Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.1</version> <!-- Updated version -->
+                <version>3.3.1</version>
             </plugin>
             <!-- Maven Compiler Plugin -->
             <plugin>
@@ -71,6 +70,12 @@
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
                 </configuration>
+            </plugin>
+            <!-- Maven Deploy Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.0.0-M1</version>
             </plugin>
         </plugins>
     </build>
